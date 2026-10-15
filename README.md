@@ -1,0 +1,267 @@
+[index.html](https://github.com/user-attachments/files/33497395/index.html)
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horário Escolar - 12.º A</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .conteudo {
+            background-color: white;
+            width: 100%;
+            max-width: 1100px;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px #00000020;
+        }
+
+        .logo {
+            width: 350px;
+            height: auto;
+        }
+
+        h1 {
+            color: #173b70;
+        }
+
+        h2 {
+            color: #173b70;
+            margin-top: 30px;
+        }
+
+        .tabela {
+            overflow-x: auto;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 2px solid #ffffff;
+            padding: 12px 6px;
+            text-align: center;
+            height: 35px;
+        }
+
+        thead th {
+            background-color: #173b70;
+            color: white;
+        }
+
+        .horas {
+            background-color: #dce3ed;
+            color: #24344d;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* Cores das disciplinas */
+
+        .port {
+            background-color: #ffdada;
+            color: #a00000;
+        }
+
+        .mat {
+            background-color: #d7e7ff;
+            color: #0645a5;
+        }
+
+        .bio {
+            background-color: #d9f4d8;
+            color: #176321;
+        }
+
+        .ef {
+            background-color: #ffebbd;
+            color: #805000;
+        }
+
+        .ainf {
+            background-color: #e9dcff;
+            color: #592b91;
+        }
+
+        .emrc {
+            background-color: #ffdaef;
+            color: #9c175d;
+        }
+
+        .vazio {
+            background-color: #f3f5f8;
+            color: #777777;
+        }
+
+
+        
+
+        @media (max-width: 700px) {
+            .conteudo {
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="conteudo">
+
+        <img src="imagens/logotipoagml.png"
+             alt="Logótipo do Agrupamento de Escolas Monte da Lua"
+             class="logo">
+
+        <h1>O Meu Horário Escolar</h1>
+        <p><strong>Agrupamento de Escolas Monte da Lua</strong></p>
+        <p>12.º A — Ciências e Tecnologias | 2026/2027</p>
+
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Segunda</th>
+                        <th>Terça</th>
+                        <th>Quarta</th>
+                        <th>Quinta</th>
+                        <th>Sexta</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="horas">8:00<br>8:50</td>
+                        <td class="port" rowspan="2">PORT</td>
+                        <td class="ainf" rowspan="2">AINF</td>
+                        <td class="ef" rowspan="2">EF</td>
+
+                        <td class="vazio"></td>
+                        <td class="bio" rowspan="2">BIO — T1</td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">8:50<br>9:40</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">10:00<br>10:50</td>
+                        <td class="mat" rowspan="2">MAT A</td>
+                        <td class="port" rowspan="2">PORT</td>
+                        <td class="mat">MAT A</td>
+                        <td class="vazio"></td>
+                        <td class="bio" rowspan="2">BIO — T2</td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">10:50<br>11:40</td>
+                        <td class="port">PORT</td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">11:50<br>12:40</td>
+                        <td class="bio">BIO</td>
+                        <td class="mat">MAT A</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">12:40<br>13:30</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">13:35<br>14:25</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="emrc">EMRC</td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">14:25<br>15:15</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="ef">EF</td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">15:25<br>16:15</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="mat" rowspan="2">MAT A</td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">16:30<br>17:20</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                    </tr>
+
+                    <tr>
+                        <td class="horas">17:20<br>18:10</td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="vazio"></td>
+                        <td class="ainf">AINF</td>
+                        <td class="vazio"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Legenda das disciplinas</h2>
+
+        <ul class="legenda">
+            <li class="port">PORT — Português</li>
+            <li class="mat">MAT A — Matemática A</li>
+            <li class="bio">BIO — Biologia</li>
+            <li class="ef">EF — Educação Física</li>
+            <li class="ainf">AINF — Aplicações Informáticas</li>
+            <li class="emrc">EMRC — Educação Moral e Religiosa Católica</li>
+        </ul>
+
+
+    </main>
+
+</body>
+</html>
